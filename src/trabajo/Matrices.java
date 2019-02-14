@@ -117,8 +117,58 @@ public class Matrices {
 	
 	
 	
+	public void addColumna() {
+		
+		int filotas = FILAS;
+		int columnotas = COLUMNAS+1;
+		int grande [][] = new int [filotas][columnotas];
+		
+		
+		for(int j=0;j<columnotas;j++) {
+			for(int i=0;i<filotas;i++) {
+		
+				if(j!=(columnotas-1)) {
+					grande[i][j] = original[i][j];
+				}
+				else {
+					grande[i][j] = (int) (Math.random()*9)+1;
+				}
+			}
+		}
+		
+		original = grande;
+		FILAS= filotas;
+		COLUMNAS= columnotas;
+	}
 	
 	
+	
+	
+	
+	
+	public void addFila() {
+		
+		int filotas = FILAS+1;
+		int columnotas = COLUMNAS;
+		int grande [][] = new int [filotas][columnotas];
+		
+		
+		for(int i=0;i<filotas;i++) {
+			for(int j=0;j<columnotas;j++) {
+		
+				if(i!=(filotas-1)) {
+					grande[i][j] = original[i][j];
+				}
+				else {
+					grande[i][j] = (int) (Math.random()*9)+1;
+				}
+			}
+		}
+		
+		original = grande;
+		FILAS= filotas;
+		COLUMNAS= columnotas;
+	}	
 	
 	
 	

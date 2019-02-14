@@ -7,11 +7,13 @@ public class Start {
 
 		Matrices matriz = new Matrices(4,7);
 		matriz.imprimir();
-		matriz.eliminarColumna(0);
+		matriz.addFila();
 		matriz.imprimir();
-		matriz.eliminarColumna(2);
+		matriz.addFila();
 		matriz.imprimir();
-		matriz.eliminarFilas(1);
+		matriz.addFila();
+		matriz.imprimir();
+		matriz.addFila();
 		matriz.imprimir();
 	}
 }
